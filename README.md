@@ -19,7 +19,7 @@ Cada funcionalidad inicia con un flujo guiado:
 
 | ID | Historia | Prioridad | Puntos | Archivo |
 |----|----------|-----------|--------|---------|
-| H-01 | Registro de usuario | Alta | 3 | [HU-01-registro-de-usuario.md](HU-01-registro-de-usuario.md) |
+| H-01 | Registro de usuario | Alta | 3 | [HU-01-registro-de-usuario.md](historias_usuario/HU-01-registro-de-usuario.md) |
 | H-02 | Inicio de sesión | Alta | 3 | [HU-02-inicio-de-sesion.md](HU-02-inicio-de-sesion.md) |
 | H-03 | Explorar menú | Alta | 2 | [HU-03-explorar-menu.md](HU-03-explorar-menu.md) |
 | H-04 | Agregar productos al carrito | Alta | 3 | [HU-04-agregar-al-carrito.md](HU-04-agregar-al-carrito.md) |
