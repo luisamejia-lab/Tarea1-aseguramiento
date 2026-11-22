@@ -1,0 +1,65 @@
+# HU-06 · Historial de pedidos
+
+**Prioridad:** Media · **Puntos de historia:** 3 · **Etiquetas:** `historia-de-usuario`, `historial-de-pedidos`
+
+## Funcionalidad
+
+> Cada funcionalidad inicia con un flujo guiado:
+>
+> - **Historial de pedido:** consultar órdenes anteriores.
+
+## Historia
+
+> **Como** cliente de LePetitDep,  
+> **quiero** consultar mis órdenes anteriores,  
+> **para** revisar lo que pedí o repetir un pedido.
+
+## Flujo guiado
+
+1. Busca la orden por número
+2. Revisa el detalle
+3. Repite el pedido si lo desea
+
+## Criterios de aceptación
+
+### CA-01: Ver historial
+
+- **Dado que** tengo pedidos realizados
+- **Cuando** entro a **Mis pedidos**
+- **Entonces** veo mis órdenes de la más reciente a la más antigua, con número, fecha, estado, método de pago, hora de retiro, productos y total
+
+### CA-02: Buscar orden
+
+- **Dado que** estoy en **Mis pedidos**
+- **Cuando** escribo parte de un número de orden
+- **Entonces** la lista se filtra en tiempo real
+
+### CA-03: Repetir pedido
+
+- **Dado que** estoy viendo una orden
+- **Cuando** pulso **Repetir pedido**
+- **Entonces** los productos se cargan en el carrito y soy llevado a **Carrito**
+
+### CA-04: Sin pedidos
+
+- **Dado que** no he hecho pedidos
+- **Cuando** entro a **Mis pedidos**
+- **Entonces** veo "No hay pedidos para mostrar." y el botón **Hacer mi primer pedido**
+
+### CA-05: Privacidad
+
+- **Dado que** otro usuario tiene pedidos
+- **Cuando** entro a **Mis pedidos**
+- **Entonces** solo veo mis propios pedidos
+
+## Notas técnicas
+
+- Archivo: `js/app.js` → `vistaHistorial()`
+
+## Definición de terminado
+
+- [ ] Todos los criterios de aceptación se cumplen
+- [ ] Probado en Chrome, Edge y Firefox
+- [ ] Se ve correctamente en móvil y escritorio
+- [ ] Sin errores en la consola del navegador
+- [ ] README actualizado si aplica
